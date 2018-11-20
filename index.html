@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="title">NotePad</h1>
+  
+      <div class="form">
+          <div>
+              <button onclick="handlers.toggleAll()">All Notes are Completed!</button>
+            </div>
+            
+            <div>
+              <button onclick="handlers.addTodo()">Click to Add Note</button>
+              <input id="addTodoTextInput" type="text" class="heighttext">
+            </div>
+            
+            <div>
+              <button onclick="handlers.changeTodo()">Change Note By Index</button>
+              <input id="changeTodoPositionInput" type="number" class="heighttext">
+              <input id="changeTodoTextInput" type="text" class="heighttext">
+            </div>
+            
+            <!-- <div>
+              <button onclick="handlers.deleteTodo()">Delete</button>
+              <input id="deleteTodoPositionInput" type="number">
+            </div> -->
+            
+            <div>
+              <button onclick="handlers.toggleCompleted()">Check or Uncheck By Index</button>
+              <input id="toggleCompletedPositionInput" type="number" class="heighttext">
+            </div>
+            
+            <ul>
+            </ul>
+            
+            <script src="script.js"></script>
+      </div>
+      
+    </div>
+  </body>
+
+</html>
